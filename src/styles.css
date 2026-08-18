@@ -1,0 +1,57 @@
+@import "../assets/styles/styles.css";
+
+h1,
+h2,
+h3 {
+  letter-spacing: 0;
+}
+
+#root {
+  min-height: 100svh;
+}
+
+.hero-copy h1 span,
+.hero-copy h1 em {
+  display: block;
+}
+
+@media (max-width: 680px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .hero-copy,
+  .hero-lede,
+  .hero-system,
+  .hero .shell,
+  .hero-layout,
+  .hero-actions,
+  .capability-line {
+    width: calc(100vw - 28px);
+    max-width: calc(100vw - 28px);
+  }
+
+  .hero-copy h1 {
+    max-width: 100%;
+    font-size: 2.25rem;
+    overflow-wrap: break-word;
+    text-wrap: auto;
+  }
+
+  .hero-lede {
+    font-size: 0.98rem;
+    overflow-wrap: anywhere;
+  }
+
+  .capability-line li {
+    overflow-wrap: anywhere;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero-copy h1 {
+    font-size: 2.05rem;
+  }
+}

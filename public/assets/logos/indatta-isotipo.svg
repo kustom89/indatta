@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="INDATTA">
+  <title>INDATTA · isotipo Vector</title>
+  <!--
+    «I» con serifas (la misma letra de la variante Bloque): el vector la cruza por el centro del asta
+    y cada mitad queda anclada por su barra, así la letra se sigue leyendo partida.
+    Eje del vector: x + y = 64 · muesca de 9 u sobre trazo de 5 u = 2 u de aire a cada lado.
+    Origen hueco abajo-izquierda, destino sólido arriba-derecha.
+  -->
+  <defs>
+    <linearGradient id="indattaBrand" gradientUnits="userSpaceOnUse" x1="0" y1="64" x2="64" y2="0">
+      <stop offset="0" stop-color="#0A3A66"/>
+      <stop offset=".48" stop-color="#1B6FB8"/>
+      <stop offset="1" stop-color="#4FC5F2"/>
+    </linearGradient>
+    <mask id="indattaCut">
+      <rect width="64" height="64" fill="#fff"/>
+      <line x1="17.5" y1="46.5" x2="49" y2="15" stroke="#000" stroke-width="9" stroke-linecap="round"/>
+    </mask>
+  </defs>
+  <g fill="url(#indattaBrand)">
+    <g mask="url(#indattaCut)">
+      <rect x="24" y="8" width="16" height="6" rx="1.6"/>
+      <rect x="28.5" y="8" width="7" height="48" rx="1.6"/>
+      <rect x="24" y="50" width="16" height="6" rx="1.6"/>
+    </g>
+    <line x1="17.5" y1="46.5" x2="49" y2="15" stroke="url(#indattaBrand)" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="10" cy="54" r="4.2" fill="none" stroke="url(#indattaBrand)" stroke-width="3"/>
+    <circle cx="52" cy="12" r="6.5"/>
+  </g>
+</svg>
